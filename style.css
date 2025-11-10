@@ -1,0 +1,125 @@
+/* ====== Основные стили ====== */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00b7ff;
+}
+
+/* ====== Контент ====== */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #111;
+    border-bottom: 2px solid #00b7ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.neuro-item {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.neuro-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ====== Кнопка вверх ====== */
+#toTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #00b7ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+}
+
+#toTopBtn:hover {
+    background: #0092cc;
+}
+
+/* ====== Плавная прокрутка ====== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Стили ссылок внутри списка нейросетей */
+.neuro-list a {
+  color: #007bff; /* базовый синий цвет */
+  text-decoration: none; /* убираем подчёркивание по умолчанию */
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+/* При наведении курсора */
+.neuro-list a:hover {
+  color: #0056b3; /* тёмно-синий оттенок */
+  text-decoration: underline; /* подчёркивание */
+  cursor: pointer;
+}
+
+/* Можно добавить плавную подсветку карточек при наведении */
+.neuro-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
